@@ -1,4 +1,6 @@
-This repository hosts a GUI-based application of the Weather Research and Forecasting Model (WRF) on a Raspberry Pi (version 3 or higher). The following text can be summarized into a few instructions to install and run the application. :<br/>
+This repository hosts a GUI-based application of the Weather Research and Forecasting Model (WRF) on a Raspberry Pi (version 3 or higher). This version is now depricated and updates are infrequent. The current and supported version can be found in the [Pi-WRF (Jupyter Notebook) repository](https://github.com/NCAR/pi-wrf). 
+
+The following text can be summarized into a few instructions to install and run the application. :<br/>
 1) Open a terminal
 2) Type `curl -sSL https://get.docker.com | sh`
 3) Type `sudo docker run -it --rm --net=host -e DISPLAY -v $HOME/.Xauthority:/root/.Xauthority ncar/pi-wrf`
