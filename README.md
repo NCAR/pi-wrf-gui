@@ -3,7 +3,7 @@ This repository hosts a GUI-based application of the Weather Research and Foreca
 The following text can be summarized into a few instructions to install and run the application. :<br/>
 1) Open a terminal
 2) Type `curl -sSL https://get.docker.com | sh`
-3) Type `sudo docker run -it --rm --net=host -e DISPLAY -v $HOME/.Xauthority:/root/.Xauthority ncar/pi-wrf`
+3) Type `sudo docker run -it --rm --net=host -e DISPLAY -v $HOME/.Xauthority:/root/.Xauthority ncar/pi-wrf:gui`
 
 ### Section 1: Installing and Running the App (Raspberry Pi)
 The Pi-WRF application requires an internet connection, and the container platform [Docker](https://www.docker.com/products/docker-desktop "Docker.com") to run. In short, Docker is a is a platform that creates containers, which simulates the software of a different computer, all within your own computer. If you are familiar with the term virtual machine, then containers are light-weight forms of virtual machines. The containers Docker creates are self-contained, and code/programs within the container do no affect any of the files or security on your host system. 
@@ -17,7 +17,7 @@ In order to run the Pi-WRF application, you will need to download and install Do
 `curl -sSL https://get.docker.com | sh`:<br/>
 
 3) Download a Docker image and create a container that holds the WRF app by typing the following (all in one line):<br/>
-`sudo docker run -it --rm --net=host -e "DISPLAY" -v $(pwd):/pi-wrf/Output/user_saved_files -v $HOME/.Xauthority:/root/.Xauthority ncar/pi-wrf`
+`sudo docker run -it --rm --net=host -e "DISPLAY" -v $(pwd):/pi-wrf/Output/user_saved_files -v $HOME/.Xauthority:/root/.Xauthority ncar/pi-wrf:gui`
 
 ### Section 2: Using the App
 After the app launches, the user will select the time to start/initialize the model, set the model’s duration, select the domain of the model, and then run the model. In order to use the application, the raspberry Pi must be connected to the internet. :<br/>
