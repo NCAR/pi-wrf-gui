@@ -63,4 +63,7 @@ At the equator, large towering cumulus clouds that arise due to deep convection 
 5) Dates do not work 
 Users are limited to a few days before the current date. Times prior to this are considered archived simulations and a collection of archive simulations will be included at a later version of the Pi-WRF application. 
 
+### References
+Foust, William E. "An Informal Introduction to Numerical Weather Models with Low-Cost Hardware." Bulletin of the American Meteorological Society (2021): 1-18
+
 
