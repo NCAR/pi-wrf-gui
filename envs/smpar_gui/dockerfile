@@ -77,11 +77,9 @@ RUN apt-get update && apt-get install -y \
 	#
 	#
 	# DOWNLOADING AND INSTALLING NCL 6.4.0 LIBRARY
-        && wget --no-check-certificate https://www2.cisl.ucar.edu/sites/default/files/ncl_6.4.0.tar_.zip     \
-        && unzip ncl_6.4.0.tar_.zip -d /pi-wrf/WRF_System/                                                   \
-        && rm *.zip                                                                                          \
-        && tar -xvf ncl_6.4.0.tar                                                                            \
-	&& rm *.tar                                                                                          \
+        && wget --no-check-certificate https://www.dropbox.com/s/u73mledhx66rira/ncl_6.4.0.zip?dl=0 -O ncl_6.4.0.zip     \
+        && unzip ncl_6.4.0.zip -d /pi-wrf/WRF_System/                                                                    \
+        && rm *.zip                                                                                                      \
         #
         #
         # INSTALLING NETCDF LIBRARY
