@@ -36,7 +36,7 @@ If you no longer wish to have the app or Docker installed on your Raspberry Pi y
 
 
 3) Remove Docker:<br/>
-`Sudo apt remove docker-ce`:<br/>
+`sudo apt remove docker-ce`:<br/>
 
 ### Section 4: Build from Source (advanced users only)
 This section is for users who have modified the WRF source code. Make your changes to the source code and then run the following commands to build a new Docker Image. Warning: This may take a few hours to complete.
